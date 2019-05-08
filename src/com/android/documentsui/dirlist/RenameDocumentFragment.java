@@ -231,7 +231,7 @@ public class RenameDocumentFragment extends DialogFragment {
             if (result != null) {
                 Metrics.logRenameFileOperation(getContext());
             } else {
-                Snackbars.showRenameFailed(mActivity);
+                //Snackbars.showRenameFailed(mActivity);
                 Metrics.logRenameFileError(getContext());
             }
             if (mDialog != null) {
