@@ -80,7 +80,7 @@
                 android:ellipsize="end"
                 android:singleLine="true"
                 android:textAlignment="viewStart"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                android:textAppearance="@*android:style/TextAppearancePreference"
                 android:textColor="@color/item_title" />
 
         </LinearLayout>
