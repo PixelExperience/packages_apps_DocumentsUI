@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            style="@android:style/TextAppearance.Material.Subhead"/>
+            style="@*android:style/TextAppearancePreference"/>
 
     </RelativeLayout>
 
