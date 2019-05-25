@@ -39,7 +39,8 @@
                 android:background="?android:attr/colorPrimary"
                 android:elevation="8dp"
                 android:theme="?actionBarTheme"
-                android:popupTheme="?actionBarPopupTheme">
+                android:popupTheme="?actionBarPopupTheme"
+                android:titleTextAppearance="@style/ToolbarTitle">
 
                 <com.android.documentsui.DropdownBreadcrumb
                     android:id="@+id/dropdown_breadcrumb"
@@ -85,7 +86,8 @@
                 android:background="?android:attr/colorPrimary"
                 android:elevation="8dp"
                 android:theme="?actionBarTheme"
-                android:popupTheme="?actionBarPopupTheme" />
+                android:popupTheme="?actionBarPopupTheme"
+                android:titleTextAppearance="@style/ToolbarTitle" />
 
             <FrameLayout
                 android:id="@+id/container_roots"
