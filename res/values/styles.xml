@@ -67,4 +67,9 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
+    <style name="ToolbarTitle" parent="android:TextAppearance.Material.Title">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
 </resources>

@@ -35,7 +35,8 @@
             android:background="?android:attr/colorPrimary"
             android:elevation="8dp"
             android:theme="?actionBarTheme"
-            android:popupTheme="?actionBarPopupTheme">
+            android:popupTheme="?actionBarPopupTheme"
+            android:titleTextAppearance="@style/ToolbarTitle">
 
             <com.android.documentsui.HorizontalBreadcrumb
                 android:id="@+id/horizontal_breadcrumb"
