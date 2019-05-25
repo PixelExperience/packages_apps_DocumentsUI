@@ -85,7 +85,7 @@
                 android:ellipsize="middle"
                 android:singleLine="true"
                 android:textAlignment="viewStart"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                android:textAppearance="@*android:style/TextAppearancePreference"
                 android:textColor="?android:attr/textColorPrimary" />
 
             <TextView
