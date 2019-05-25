@@ -27,7 +27,8 @@
         android:background="?android:attr/colorPrimary"
         android:elevation="8dp"
         android:theme="?actionBarTheme"
-        android:popupTheme="?actionBarPopupTheme">
+        android:popupTheme="?actionBarPopupTheme"
+        android:titleTextAppearance="@style/ToolbarTitle">
     </Toolbar>
 
     <FrameLayout

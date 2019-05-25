@@ -26,6 +26,7 @@
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:windowLightNavigationBar">true</item>
         <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
     <style name="ActionBarPopupTheme" parent="@style/Theme.AppCompat.DayNight" />
 
@@ -65,6 +66,11 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="android:TextAppearance.Material.Title">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
 </resources>
