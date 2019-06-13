@@ -76,7 +76,8 @@ public class RenameDocumentFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Context context = getActivity();
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        AlertDialog.Builder builder = new AlertDialog.Builder(context,
+            com.android.internal.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
         LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
         View view = dialogInflater.inflate(R.layout.dialog_file_name, null, false);
 

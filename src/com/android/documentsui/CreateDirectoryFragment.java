@@ -63,7 +63,8 @@ public class CreateDirectoryFragment extends DialogFragment {
         final Context context = getActivity();
         final ContentResolver resolver = context.getContentResolver();
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context,
+            com.android.internal.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
         final LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
 
         final View view = dialogInflater.inflate(R.layout.dialog_file_name, null, false);

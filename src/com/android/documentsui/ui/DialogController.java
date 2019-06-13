@@ -85,7 +85,8 @@ public interface DialogController {
             // but as a simple runtime dialog. So rotating a device with an
             // active delete dialog...results in that dialog disappearing.
             // We can do better, but don't have cycles for it now.
-            final AlertDialog alertDialog = new AlertDialog.Builder(mActivity)
+            final AlertDialog alertDialog = new AlertDialog.Builder(mActivity,
+                 com.android.internal.R.style.Theme_DeviceDefault_Light_Dialog_Alert)
                     .setView(message)
                     .setPositiveButton(
                             android.R.string.ok,

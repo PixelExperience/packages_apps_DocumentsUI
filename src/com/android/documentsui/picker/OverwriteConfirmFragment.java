@@ -52,7 +52,8 @@ public class OverwriteConfirmFragment extends DialogFragment {
 
         mOverwriteTarget = arg.getParcelable(Shared.EXTRA_DOC);
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),
+            com.android.internal.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
         final String message = String.format(
                 getString(R.string.overwrite_file_confirmation_message),
                 mOverwriteTarget.displayName);

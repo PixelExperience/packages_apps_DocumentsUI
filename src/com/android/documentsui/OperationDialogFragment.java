@@ -92,7 +92,8 @@ public class OperationDialogFragment extends DialogFragment {
         final ArrayList<DocumentInfo> docList = getArguments().getParcelableArrayList(
                 FileOperationService.EXTRA_FAILED_DOCS);
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),
+            com.android.internal.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
         final String message = new MessageBuilder(getContext()).generateListMessage(
                 dialogType, operationType, docList, uriList);
 
