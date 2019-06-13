@@ -75,6 +75,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.android.documentsui.base.Providers;
+import com.android.documentsui.R;
 
 import java.io.File;
 import java.io.IOException;
@@ -346,7 +347,8 @@ public class ScopedAccessActivity extends Activity {
             }
             final TextView messageField = (TextView) view.findViewById(R.id.message);
             messageField.setText(message);
-            mDialog = new AlertDialog.Builder(mActivity, R.style.Theme_AppCompat_Light_Dialog_Alert)
+            mDialog = new AlertDialog.Builder(mActivity,
+                R.style.DialogTheme)
                     .setView(view)
                     .setPositiveButton(R.string.allow, listener)
                     .setNegativeButton(R.string.deny, listener)
