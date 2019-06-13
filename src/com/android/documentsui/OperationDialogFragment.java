@@ -33,6 +33,8 @@ import com.android.documentsui.services.FileOperationService;
 import com.android.documentsui.services.FileOperationService.OpType;
 import com.android.documentsui.ui.MessageBuilder;
 
+import com.android.documentsui.R;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
@@ -92,7 +94,8 @@ public class OperationDialogFragment extends DialogFragment {
         final ArrayList<DocumentInfo> docList = getArguments().getParcelableArrayList(
                 FileOperationService.EXTRA_FAILED_DOCS);
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),
+            R.style.DialogTheme);
         final String message = new MessageBuilder(getContext()).generateListMessage(
                 dialogType, operationType, docList, uriList);
 
