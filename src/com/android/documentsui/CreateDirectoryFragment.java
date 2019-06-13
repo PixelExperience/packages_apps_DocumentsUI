@@ -46,6 +46,7 @@ import android.widget.TextView.OnEditorActionListener;
 import com.android.documentsui.base.DocumentInfo;
 import com.android.documentsui.base.Shared;
 import com.android.documentsui.ui.Snackbars;
+import com.android.documentsui.R;
 
 /**
  * Dialog to create a new directory.
@@ -63,7 +64,8 @@ public class CreateDirectoryFragment extends DialogFragment {
         final Context context = getActivity();
         final ContentResolver resolver = context.getContentResolver();
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context,
+            R.style.DialogTheme);
         final LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
 
         final View view = dialogInflater.inflate(R.layout.dialog_file_name, null, false);
